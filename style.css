@@ -41,3 +41,25 @@
   .filters{gap:7px}
   .filters button{font-size:13px;padding:8px 10px}
 }
+
+/* Language switch and progressively disclosed project information. */
+.language-switch{display:flex;align-items:center;gap:2px;padding:7px 10px 7px 4px;flex:none}
+.language-switch button{min-width:36px;min-height:38px;padding:4px 6px;border:1px solid transparent;border-radius:8px;background:transparent;color:#d6d6d9;font:700 12px 'DM Sans',Arial,sans-serif;cursor:pointer}
+.language-switch button:hover{color:var(--gold)}
+.language-switch button[aria-pressed="true"]{color:var(--gold);background:#3b352b;border-color:#66583e}
+.project-details{margin:14px 4px 0;padding:12px 14px;border:1px solid #3c3b37;border-radius:10px;background:#242426}
+.project-details summary{color:var(--gold);font-size:14px;font-weight:700;line-height:1.5;cursor:pointer;list-style-position:outside;margin-left:17px}
+.project-details summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:3px}
+.project-details[open] summary{margin-bottom:9px}
+.project-details p,.project-details li{color:var(--muted);font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+.project-details p{margin:7px 0}
+.project-details ul{padding-left:19px;margin:8px 0 0}
+.project-details li+li{margin-top:5px}
+.project-links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 4px}
+.project-links a{font-size:14px}
+@media(max-width:600px){
+  .tabs{overflow-x:visible}
+  .tabs a{justify-content:center;flex:1 1 auto;padding:14px 3px;font-size:11px}
+  .language-switch{gap:0;padding:5px 5px 5px 1px}
+  .language-switch button{min-width:31px;min-height:38px;font-size:11px;padding:3px 4px}
+}
